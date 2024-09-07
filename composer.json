@@ -1,0 +1,77 @@
+{
+    "name": "lara-zeus/filament-plugin-tools",
+    "description": "a set of tools to configure your plugin",
+    "keywords": [
+        "laravel",
+        "lara-zeus",
+        "filament-plugin-tools",
+        "filamentphp"
+    ],
+    "homepage": "https://larazeus.com/filament-plugin-tools",
+    "support": {
+        "issues": "https://github.com/lara-zeus/filament-plugin-tools/issues",
+        "source": "https://github.com/lara-zeus/filament-plugin-tools"
+    },
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lara Zeus (Ash)",
+            "email": "info@larazeus.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1",
+        "nunomaduro/collision": "^7.0",
+        "pestphp/pest-plugin-livewire": "2.x-dev",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "laravel/pint": "^1.0",
+        "larastan/larastan": "^2.2",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraZeus\\FilamentPluginTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaraZeus\\FilamentPluginTools\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "test:pest": "vendor/bin/pest --parallel",
+        "test:phpstan": "vendor/bin/phpstan analyse",
+        "test": [
+            "@test:pest",
+            "@test:phpstan"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraZeus\\FilamentPluginTools\\FilamentPluginToolsServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "stable"
+}
