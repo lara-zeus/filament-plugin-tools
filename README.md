@@ -25,7 +25,7 @@ _💖 if you think this has potential, star ⭐️ the project to let me know :)
 
 ## Features
 - 🔥 Resource configuration
-  - let you provide your users with the abilities to configure your plugin resources, like the nav label,group,icon etc.
+  - Allows your users to configure various aspects of your plugin resources, such as the navigation label, group, icon, and more
 
 and more in the way.
 

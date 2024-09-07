@@ -11,7 +11,7 @@ weight: 1
 ## Features
 
 - 🔥 Resource configuration
-    - let you provide your users with the abilities to configure your plugin resources, like the nav label,group,icon etc.
+  - Allows your users to configure various aspects of your plugin resources, such as the navigation label, group, icon, and more
 
 ## Support
 
