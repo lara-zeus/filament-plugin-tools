@@ -25,7 +25,7 @@ public static function shouldRegisterNavigation(): bool
 }
 ```
 
-Now, if your users can hide any resource:
+Now, your users can hide any resource:
 
 ```php
 public function panel(Panel $panel): Panel
