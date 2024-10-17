@@ -2,6 +2,18 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## v1.0.1 - 2024-10-17
+
+### What's Changed
+
+* allow nullable model by @atmonshi in https://github.com/lara-zeus/filament-plugin-tools/pull/1
+
+### New Contributors
+
+* @atmonshi made their first contribution in https://github.com/lara-zeus/filament-plugin-tools/pull/1
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/v1.0.0...v1.0.1
+
 ## v1.0.0 - 2024-09-07
 
 initial release
