@@ -18,11 +18,11 @@ trait HasModels
         return $this->models;
     }
 
-    public static function getModel(string $model): string
+    public static function getModel(string $model): ?string
     {
         return array_merge(
             config(static::get()->getId() . '.models'),
             (new static)::get()->getModels()
-        )[$model];
+        )[$model] ?? null;
     }
 }

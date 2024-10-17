@@ -5,7 +5,7 @@ weight: 1
 
 ## Config File
 
-first, provide an array in your config file, contain the model class name as a keey, and its value will be the full path:
+first, provide an array in your config file, contain the model class name as a key, and its value will be the full path:
 For example, let say you plugin needs two models, the user model and a Bookmark model:
 
 ```php
