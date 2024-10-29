@@ -1,6 +1,7 @@
 <?php
 
 namespace LaraZeus\FilamentPluginTools\Concerns;
+
 use Closure;
 
 trait CanDisableBadges
@@ -30,7 +31,7 @@ trait CanDisableBadges
         return $this;
     }
 
-    public function getShowNavigationBadges(string $resource = null): bool
+    public function getShowNavigationBadges(?string $resource = null): bool
     {
         if ($resource !== null) {
             return $this->showNavigationBadgesArray[$resource] ?? $this->evaluate($this->showNavigationBadges);
