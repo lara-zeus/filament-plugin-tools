@@ -8,3 +8,6 @@ parameters:
 
     checkOctaneCompatibility: true
     checkModelProperties: true
+    ignoreErrors:
+        -
+            identifier: phpstanPlayground.traitUnused
