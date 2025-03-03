@@ -2,6 +2,14 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## v1.0.3 - 2025-03-03
+
+### What's Changed
+
+* add HasRouteNamePrefix trait by @atmonshi in https://github.com/lara-zeus/filament-plugin-tools/pull/3
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/v1.0.2...v1.0.3
+
 ## v1.0.2 - 2024-10-29
 
 ### What's Changed
