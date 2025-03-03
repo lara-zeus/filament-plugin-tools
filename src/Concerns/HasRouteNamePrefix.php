@@ -6,7 +6,7 @@ use Closure;
 
 trait HasRouteNamePrefix
 {
-    //test
+    // test
     protected Closure | string | null $routeNamePrefix = null;
 
     public function routePrefix(Closure | string | null $prefix): static
