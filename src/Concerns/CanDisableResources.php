@@ -13,8 +13,8 @@ trait CanDisableResources
         return $this;
     }
 
-    public function getDisabledResources(): ?array
+    public function isResourceDisabled(string $resource): bool
     {
-        return $this->disabledResources;
+        return in_array($resource, $this->disabledResources, true);
     }
 }
