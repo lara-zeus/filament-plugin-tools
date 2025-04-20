@@ -20,7 +20,7 @@ trait HasModels
         return $this->models;
     }
 
-    public static function getModel(string $model): null|string|Model
+    public static function getModel(string $model): null | string | Model
     {
         return array_merge(
             config(static::get()->getId() . '.models'),
