@@ -2,6 +2,8 @@
 
 namespace LaraZeus\FilamentPluginTools\Concerns;
 
+use Illuminate\Database\Eloquent\Model;
+
 trait HasModels
 {
     protected array $models = [];
@@ -18,7 +20,7 @@ trait HasModels
         return $this->models;
     }
 
-    public static function getModel(string $model): ?string
+    public static function getModel(string $model): null|string|Model
     {
         return array_merge(
             config(static::get()->getId() . '.models'),
