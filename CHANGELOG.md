@@ -2,6 +2,14 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## v1.0.4 - 2025-05-11
+
+### What's Changed
+
+* Allow to disable global search for a resource by @atmonshi in https://github.com/lara-zeus/filament-plugin-tools/pull/5
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/v1.0.3...v1.0.4
+
 ## v1.0.3 - 2025-03-03
 
 ### What's Changed
