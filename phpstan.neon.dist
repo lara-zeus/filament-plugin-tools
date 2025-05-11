@@ -10,4 +10,4 @@ parameters:
     checkModelProperties: true
     ignoreErrors:
         -
-            identifier: phpstanPlayground.traitUnused
+            identifier: trait.unused

@@ -16,7 +16,7 @@ class MyAwesomePlugin extends FilamentPluginTools implements Plugin
 }
 ```
 
-and defined the default searchs:
+and defined the default searches:
 
 ```php
 public array $defaultGloballySearchableAttributes = [
@@ -42,9 +42,23 @@ public function panel(Panel $panel): Panel
         // ...
         ->plugins([
             MyAwesomePlugin::make()
-                ->hideResources([
-                    AwesomeResource::class,
-                ]),
+                ->globallySearchableAttributes(['title', 'slug']),
+        ]);
+}
+```
+
+## Diable Global Search
+
+uses may disable global search by using `disableGlobalSearch`:
+
+```php
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        // ...
+        ->plugins([
+            MyAwesomePlugin::make()
+                ->disableGlobalSearch(true),
         ]);
 }
 ```
