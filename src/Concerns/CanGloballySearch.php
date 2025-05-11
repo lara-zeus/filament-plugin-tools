@@ -6,7 +6,7 @@ trait CanGloballySearch
 {
     public array $globallySearchableAttributes = [];
 
-    public bool $disableGlobalSearch = false;
+    public array $disableGlobalSearch = [];
 
     public function globallySearchableAttributes(array $label): static
     {
@@ -20,21 +20,21 @@ trait CanGloballySearch
         return $this->globallySearchableAttributes;
     }
 
-    public function disableGlobalSearch(bool $condetion): static
+    public function disableGlobalSearch(array $resources): static
     {
-        $this->disableGlobalSearch = $condetion;
+        $this->disableGlobalSearch = $resources;
 
         return $this;
     }
 
-    public function isGlobaSearchDisabled(): bool
+    public function getDisabledGlobalSearch(): array
     {
         return $this->disableGlobalSearch;
     }
 
     public function getGlobalAttributes(string $class): array
     {
-        if ($this->isGlobaSearchDisabled()) {
+        if (in_array($class, $this->getDisabledGlobalSearch(), true)) {
             return [];
         }
 

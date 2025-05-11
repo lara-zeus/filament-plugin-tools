@@ -58,7 +58,9 @@ public function panel(Panel $panel): Panel
         // ...
         ->plugins([
             MyAwesomePlugin::make()
-                ->disableGlobalSearch(true),
+                ->disableGlobalSearch([
+                    LinksResource::class
+                ]),
         ]);
 }
 ```
