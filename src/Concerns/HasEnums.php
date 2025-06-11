@@ -18,7 +18,7 @@ trait HasEnums
         return $this->enums;
     }
 
-    public static function getEnum(string $enum): null | Enum
+    public static function getEnum(string $enum): ?Enum
     {
         return array_merge(
             config(static::get()->getId() . '.enums'),

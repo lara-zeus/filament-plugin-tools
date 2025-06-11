@@ -2,6 +2,7 @@
 
 namespace LaraZeus\FilamentPluginTools\Concerns;
 
+use Enum;
 use Illuminate\Database\Eloquent\Model;
 
 trait HasModels
@@ -20,7 +21,7 @@ trait HasModels
         return $this->models;
     }
 
-    public static function getModel(string $model): null | string | Model | \Enum
+    public static function getModel(string $model): null | string | Model | Enum
     {
         return array_merge(
             config(static::get()->getId() . '.models'),
