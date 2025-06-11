@@ -8,7 +8,7 @@ trait HasEnums
 
     public function enums(array $enums): static
     {
-        // test test
+        // test test test
         $this->enums = $enums;
 
         return $this;
