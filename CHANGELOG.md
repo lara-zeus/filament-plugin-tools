@@ -2,6 +2,14 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## 2.0.3 - 2025-10-21
+
+### What's Changed
+
+* filament 4 stable by @atmonshi in https://github.com/lara-zeus/filament-plugin-tools/pull/10
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/2.0.2...2.0.3
+
 ## v1.0.4 - 2025-05-11
 
 ### What's Changed
