@@ -24,7 +24,7 @@ protected string $navigationGroupLabel = 'Awesome';
 and in your resource:
 
 ```php
-public static function getNavigationGroup(): ?string
+public static function getNavigationGroup():  string | UnitEnum | null
 {
     return MyAwesomePlugin::get()->getNavigationGroupLabel();
 }

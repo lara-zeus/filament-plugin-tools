@@ -6,14 +6,14 @@ use Closure;
 
 trait HasNavigationGroupLabel
 {
-    public function navigationGroupLabel(Closure | string $label): static
+    public function navigationGroupLabel(string|\UnitEnum|null|Closure $label): static
     {
         $this->navigationGroupLabel = $label;
 
         return $this;
     }
 
-    public function getNavigationGroupLabel(): Closure | string
+    public function getNavigationGroupLabel(): string|\UnitEnum|null
     {
         return $this->evaluate($this->navigationGroupLabel);
     }
