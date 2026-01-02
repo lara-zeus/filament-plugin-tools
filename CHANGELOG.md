@@ -2,6 +2,18 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## 2.0.4 - 2026-01-02
+
+### What's Changed
+
+* support navigation group enum by @theofanisv in https://github.com/lara-zeus/filament-plugin-tools/pull/11
+
+### New Contributors
+
+* @theofanisv made their first contribution in https://github.com/lara-zeus/filament-plugin-tools/pull/11
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/2.0.3...2.0.4
+
 ## 2.0.3 - 2025-10-21
 
 ### What's Changed
