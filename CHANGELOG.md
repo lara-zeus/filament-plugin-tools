@@ -2,6 +2,10 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## 3.0.1 - 2026-03-11
+
+filament 5
+
 ## 3.0.0 - 2026-03-11
 
 support filament 5
