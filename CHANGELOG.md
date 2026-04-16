@@ -2,6 +2,14 @@
 
 All notable changes to `filament-plugin-tools` will be documented in this file
 
+## 2.0.5 - 2026-04-16
+
+### What's Changed
+
+* remove illuminate/contracts by @atmonshi in https://github.com/lara-zeus/filament-plugin-tools/pull/12
+
+**Full Changelog**: https://github.com/lara-zeus/filament-plugin-tools/compare/3.0.0...2.0.5
+
 ## 3.0.2 - 2026-04-16
 
 ### What's Changed
