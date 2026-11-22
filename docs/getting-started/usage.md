@@ -18,13 +18,13 @@ class MyAwesomePlugin extends FilamentPluginTools implements Plugin
 then set the default navigation group label:
 
 ```php
-protected string $navigationGroupLabel = 'Awesome';
+protected string | UnitEnum | null | Closure $navigationGroupLabel = 'Awesome';
 ```
 
 and in your resource:
 
 ```php
-public static function getNavigationGroup(): ?string
+public static function getNavigationGroup(): string | UnitEnum | null
 {
     return MyAwesomePlugin::get()->getNavigationGroupLabel();
 }
